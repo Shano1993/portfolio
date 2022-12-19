@@ -16,12 +16,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../assets/images/logo.png */ "./assets/images/logo.png"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../assets/images/font.jpg */ "./assets/images/font.jpg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap);"]);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "", "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: rgba(6, 19, 49, 0.66);\n}\n\nhtml {\n  font-size: 62.5%;\n  font-family: \"Orbitron\", sans-serif;\n}\n\n#navBar {\n  background: #011734;\n  display: flex;\n  justify-content: space-between;\n  height: 15rem;\n}\n#navBar #logo {\n  width: 15rem;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-repeat: no-repeat;\n}\n#navBar #nav {\n  display: flex;\n  align-items: flex-end;\n}\n#navBar #nav ul {\n  border-bottom: 0.5rem solid #38b6ff;\n  display: flex;\n  padding: 2rem;\n}\n#navBar #nav ul li {\n  list-style-type: none;\n  font-size: 2.5rem;\n}\n#navBar #nav ul li a {\n  color: #F9F9F9;\n  text-decoration-line: none;\n  margin: 2rem;\n  padding: 0 2rem;\n}\n\n#container #welcome {\n  margin: 5rem auto;\n  width: 90%;\n  border-radius: 0.5rem;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n  height: 70rem;\n}\n#container #welcome p {\n  font-size: 3rem;\n  padding: 1.5rem;\n}\n\n.text-shadow {\n  text-transform: uppercase;\n  color: transparent;\n  text-shadow: 0.2rem 0.2rem 1rem #2962ff;\n  text-align: center;\n  letter-spacing: 0.2rem;\n  animation: flicker 0.5s ease-in-out infinite alternate;\n}\n\n@keyframes flicker {\n  0% {\n    opacity: 0.5;\n    text-shadow: 0.2rem 0.2rem 1rem #2962ff;\n  }\n  100% {\n    opacity: 1;\n    text-shadow: 0.2rem 0.2rem 1rem #2962ff;\n  }\n}", "",{"version":3,"sources":["webpack://./assets/styles/style.scss"],"names":[],"mappings":"AAKA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AAHF;;AAMA;EACE,uCAAA;AAHF;;AAMA;EACE,gBAAA;EACA,mCAAA;AAHF;;AAMA;EACE,mBAAA;EACA,aAAA;EACA,8BAAA;EACA,aAAA;AAHF;AAKE;EACE,YAAA;EACA,yDAAA;EACA,4BAAA;AAHJ;AAME;EACE,aAAA;EACA,qBAAA;AAJJ;AAMI;EACE,mCAAA;EACA,aAAA;EACA,aAAA;AAJN;AAMM;EACE,qBAAA;EACA,iBAAA;AAJR;AAMQ;EACE,cAAA;EACA,0BAAA;EACA,YAAA;EACA,eAAA;AAJV;;AAYE;EACE,iBAAA;EACA,UAAA;EACA,qBAAA;EACA,yDAAA;EACA,aAAA;AATJ;AAWI;EACE,eAAA;EACA,eAAA;AATN;;AAcA;EACE,yBAAA;EACA,kBAAA;EACA,uCAAA;EACA,kBAAA;EACA,sBAAA;EACA,sDAAA;AAXF;;AAcA;EACE;IACE,YAAA;IACA,uCAAA;EAXF;EAaA;IACE,UAAA;IACA,uCAAA;EAXF;AACF","sourcesContent":["@use \"./modules/vars\";\r\n@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');\r\n\r\n$blue: #2962ff;\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  background-color: rgba(6, 19, 49, 0.66);\r\n}\r\n\r\nhtml {\r\n  font-size: 62.5%;\r\n  font-family: 'Orbitron', sans-serif;\r\n}\r\n\r\n#navBar {\r\n  background: #011734;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  height: 15rem;\r\n\r\n  #logo {\r\n    width: 15rem;\r\n    background-image: url(\"/assets/images/logo.png\");\r\n    background-repeat: no-repeat;\r\n  }\r\n\r\n  #nav {\r\n    display: flex;\r\n    align-items: flex-end;\r\n\r\n    ul {\r\n      border-bottom: 0.5rem solid #38b6ff;\r\n      display: flex;\r\n      padding: 2rem;\r\n\r\n      li {\r\n        list-style-type: none;\r\n        font-size: 2.5rem;\r\n\r\n        a {\r\n          color: #F9F9F9;\r\n          text-decoration-line: none;\r\n          margin: 2rem;\r\n          padding: 0 2rem;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n#container {\r\n  #welcome {\r\n    margin: 5rem auto;\r\n    width: 90%;\r\n    border-radius: 0.5rem;\r\n    background-image: url(\"/assets/images/font.jpg\");\r\n    height: 70rem;\r\n\r\n    p {\r\n      font-size: 3rem;\r\n      padding: 1.5rem;\r\n    }\r\n  }\r\n}\r\n\r\n.text-shadow {\r\n  text-transform: uppercase;\r\n  color: transparent;\r\n  text-shadow: 0.2rem 0.2rem 1rem $blue;\r\n  text-align: center;\r\n  letter-spacing: 0.2rem;\r\n  animation: flicker 0.5s ease-in-out infinite alternate;\r\n}\r\n\r\n@keyframes flicker {\r\n  0% {\r\n    opacity: 0.5;\r\n    text-shadow: 0.2rem 0.2rem 1rem $blue;\r\n  }\r\n  100% {\r\n    opacity: 1;\r\n    text-shadow: 0.2rem 0.2rem 1rem $blue;\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -118,6 +126,41 @@ module.exports = function (cssWithMappingToString) {
     }
   };
   return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
 };
 
 /***/ }),
@@ -508,6 +551,26 @@ function styleTagTransform(css, styleElement) {
 
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./assets/images/font.jpg":
+/*!********************************!*\
+  !*** ./assets/images/font.jpg ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "image/font.jpg";
+
+/***/ }),
+
+/***/ "./assets/images/logo.png":
+/*!********************************!*\
+  !*** ./assets/images/logo.png ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "image/logo.png";
+
 /***/ })
 
 /******/ 	});
@@ -535,6 +598,9 @@ module.exports = styleTagTransform;
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -577,6 +643,37 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		__webpack_require__.p = "/build/";
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"front": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -592,6 +689,23 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/style.scss */ "./assets/styles/style.scss");
 
+
+const text = document.getElementById('text');
+let splitText = text.innerText.split('');
+
+text.innerHTML = '';
+let i = 0;
+
+setInterval(() => {
+    letterText();
+}, 100)
+
+function letterText() {
+    if (i < splitText.length) {
+        text.innerHTML += splitText[i];
+        i++;
+    }
+}
 })();
 
 /******/ })()

@@ -1,1 +1,90 @@
 @use "./modules/vars";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+$blue: #2962ff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(6, 19, 49, 0.66);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#navBar {
+  background: #011734;
+  display: flex;
+  justify-content: space-between;
+  height: 15rem;
+
+  #logo {
+    width: 15rem;
+    background-image: url("/assets/images/logo.png");
+    background-repeat: no-repeat;
+  }
+
+  #nav {
+    display: flex;
+    align-items: flex-end;
+
+    ul {
+      border-bottom: 0.5rem solid #38b6ff;
+      display: flex;
+      padding: 2rem;
+
+      li {
+        list-style-type: none;
+        font-size: 2.5rem;
+
+        a {
+          color: #F9F9F9;
+          text-decoration-line: none;
+          margin: 2rem;
+          padding: 0 2rem;
+        }
+      }
+    }
+  }
+}
+
+#container {
+  #welcome {
+    margin: 5rem auto;
+    width: 90%;
+    border-radius: 0.5rem;
+    background-image: url("/assets/images/font.jpg");
+    height: 70rem;
+
+    p {
+      font-size: 3rem;
+      padding: 1.5rem;
+    }
+  }
+}
+
+.text-shadow {
+  text-transform: uppercase;
+  color: transparent;
+  text-shadow: 0.2rem 0.2rem 1rem $blue;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  animation: flicker 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.5;
+    text-shadow: 0.2rem 0.2rem 1rem $blue;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0.2rem 0.2rem 1rem $blue;
+  }
+}
