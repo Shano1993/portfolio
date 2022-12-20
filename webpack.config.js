@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const development = require("./webpack.config.dev");
-const production = require("./webpack.conf.prod");
+const production = require("./webpack.config.prod");
 
 module.exports = (env, argv) => {
 

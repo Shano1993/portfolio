@@ -14,20 +14,16 @@
             </div>
             <div id="nav">
                 <ul>
-                    <li><a href="" class="text-shadow">Bienvenue</a></li>
-                    <li><a href="">Compétences</a></li>
-                    <li><a href="">Site</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="/?c=home" id="home">Bienvenue</a></li>
+                    <li><a href="/?c=skills" id="skill">Compétences</a></li>
+                    <li><a href="/?c=site" id="site">Site</a></li>
+                    <li><a href="/?c=contact" id="contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <div id="container">
-        <div id="welcome">
-            <p id="text">Développeur Front-End et Back-End.</p>
-        </div>
-    </div>
+    <main><?= $html ?></main>
 
     <script src="/build/js/front-bundle.js"></script>
 </body>
