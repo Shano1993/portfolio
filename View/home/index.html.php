@@ -25,9 +25,7 @@
             Seul ou à plusieurs, je suis preneur !
         </p>
     </div>
-    <div id="image">
-
-    </div>
+    <div id="image"></div>
 
 </body>
 </html>
