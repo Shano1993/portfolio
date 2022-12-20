@@ -1,15 +1,15 @@
 import "../styles/style.scss";
-import { Chart } from "chart.js/auto";
 
 const text = document.getElementById('text');
-const skill = document.getElementById('skill');
+const skill = document.getElementById('skills');
 const home = document.getElementById('home');
 const site = document.getElementById('site');
 const contact = document.getElementById('contact');
 
+// active page
 function activePage(page, element) {
     if (window.location.search === page) {
-        element.className = "text-shadow";
+        element.style.color = "#F9F9F9";
     }
 }
 
@@ -21,7 +21,7 @@ activePage("?c=contact", contact);
 if (window.location.search === "?c=home") {
     let splitText = text.innerText.split('');
 
-    text.innerHTML = '';
+    text.innerHTML = '->';
     let i = 0;
 
     setInterval(() => {
@@ -30,54 +30,36 @@ if (window.location.search === "?c=home") {
 
     function letterText() {
         if (i < splitText.length) {
-            text.innerHTML += splitText[i];
+            text.innerHTML += " " + splitText[i];
             i++;
         }
     }
 }
 
-const chart = document.getElementById('myChart').getContext('2d');
+// current date & times
+const date = document.querySelector("#date");
+const dateToday = new Date();
+const options = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+};
+date.innerHTML = dateToday.toLocaleDateString("fr-FR", options);
 
-let myChart = new Chart(chart, {
-    type : "bar",
-    data: {
-        labels: [
-            "100%",
-            "HTML5",
-            "CSS3",
-            "SASS",
-            "JavaScript",
-            "jQuery",
-            "PHP",
-            "SQL",
-            "TypeScript",
-        ],
-        datasets: [
-            {
-                label: "Compétences du langage",
-                data: [100, 90, 85, 65, 75, 55, 60, 80, 50],
-                backgroundColor: [
-                    "red",
-                    "#fd651c",
-                    "#2aa7e1",
-                    "#cd6799",
-                    "#fade23",
-                    "#6699d2",
-                    "#5967a6",
-                    "#2788cf",
-                    "#0042be",
-                ],
-                hoverBorderWidth: 3,
-            }
-        ],
-    },
-    options: {
-        indexAxis: 'y',
-        legend: {
-            display: false,
+function clock() {
+    const time = new Date(),
+        hours = time.getHours(),
+        minutes = time.getMinutes(),
+        seconds = time.getSeconds();
+    document.querySelectorAll(".clock")[0].innerHTML = harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+    function harold(standIn) {
+        if (standIn < 10) {
+            standIn = '0' + standIn
         }
-    },
-})
+        return standIn;
+    }
+}
+setInterval(clock, 0);
 
 
 

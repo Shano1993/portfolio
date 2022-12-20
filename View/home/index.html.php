@@ -9,10 +9,24 @@
 </head>
 <body>
 
-    <div id="container">
-        <div id="welcome">
-            <p id="text">Développeur Front-End et Back-End</p>
-        </div>
+    <div id="resume">
+        <h1 id="text">Shano 1993</h1>
+        <p>
+            Je suis Hanotiau Stefan et je suis développeur front-end et back-end situé en Belgique. <br>
+            J'ai une véritable passion pour tout ce qui touche à l'informatique, <br>
+            plus précisément le développement d'application, les animations et la création <br>
+            d'expériences utilisateur intuitives et dynamiques. <br><br>
+        </p>
+        <p>
+            Personne bien organisée, autodidacte, résolveur de problèmes. Fan de jeux vidéos, de musique. <br><br>
+        </p>
+        <p>
+            Intéressé par tous les projets front-end et back-end, gros ou petits projets. <br>
+            Seul ou à plusieurs, je suis preneur !
+        </p>
+    </div>
+    <div id="image">
+
     </div>
 
 </body>

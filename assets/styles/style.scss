@@ -1,8 +1,6 @@
 @use "./modules/vars";
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 
-$blue: #2962ff;
-
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +8,7 @@ $blue: #2962ff;
 }
 
 body {
-  //background-color: rgba(6, 19, 49, 0.66);
+  background-color: vars.$color-background;
 }
 
 html {
@@ -18,96 +16,134 @@ html {
   font-family: 'Orbitron', sans-serif;
 }
 
-#navBar {
-  background: #011734;
+#container {
   display: flex;
-  justify-content: space-between;
-  height: 15rem;
 
   #logo {
-    width: 15rem;
     background-image: url("/assets/images/logo.png");
-    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15rem;
+    height: 15rem;
   }
 
-  #nav {
-    display: flex;
-    align-items: flex-end;
+  #navigation, #links {
+    margin: 10rem 0;
+  }
 
-    ul {
-      border-bottom: 0.5rem solid #38b6ff;
+  #navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    border-right: 0.3rem solid #F9F9F9;
+    padding: 1.5rem;
+    color: vars.$color-font;
+
+    .clock, #date {
+      font-size: 1.4rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      padding: 1rem;
+    }
+
+    #navigation > ul {
       display: flex;
-      flex-wrap: wrap;
-      padding: 2rem;
+      flex-direction: column;
+      align-items: center;
+      list-style-type: none;
+      padding: 0.5rem;
 
       li {
-        list-style-type: none;
-        font-size: 2.5rem;
+        padding: 1.5rem;
 
         a {
-          color: #F9F9F9;
           text-decoration-line: none;
-          margin: 2rem;
-          padding: 0 2rem;
+          color: vars.$color-font;
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    #links > ul {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+
+      li {
+        padding: 1rem;
+
+        a {
+          color: vars.$color-font;
+          font-size: 2.5rem;
+        }
+
+        a:hover {
+          color: #F9F9F9;
         }
       }
     }
   }
 }
 
-#container {
-  #welcome {
-    margin: 5rem auto;
-    width: 90%;
-    border-radius: 0.5rem;
-    background-image: url("/assets/images/font.jpg");
-    height: 70rem;
-
-    p {
-      font-size: 3rem;
-      padding: 1.5rem;
-    }
-  }
-}
-
-.text-shadow {
+#home:hover, #skills:hover , #site:hover , #contact:hover {
   text-transform: uppercase;
   color: transparent;
-  text-shadow: 0.2rem 0.2rem 1rem $blue;
+  text-shadow: 0.2rem 0.2rem 1rem vars.$blue;
   text-align: center;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   animation: flicker 0.5s ease-in-out infinite alternate;
 }
 
 @keyframes flicker {
   0% {
     opacity: 0.5;
-    text-shadow: 0.2rem 0.2rem 1rem $blue;
+    text-shadow: 0.2rem 0.2rem 1rem vars.$blue;
   }
   100% {
     opacity: 1;
-    text-shadow: 0.2rem 0.2rem 1rem $blue;
+    text-shadow: 0.2rem 0.2rem 1rem vars.$blue;
   }
 }
 
-#intro {
-  width: 90%;
-  margin: 5rem auto;
+#content {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  margin: 10rem auto;
+
+  #resume {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+
+    h1 {
+      font-size: 3rem;
+      color: vars.$color-font;
+      padding: 1.5rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      color: vars.$color-font2;
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  #image {
+    background-image: url("/assets/images/gif.gif");
+    width: 65rem;
+    height: 45rem;
+    padding: 2.5rem;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
   align-items: center;
-
-  h2 {
-    font-size: 3rem;
-  }
-
-  p {
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
 }
 
-#chart {
-  width: 50%;
-  margin: 0 auto;
-}
+
+
+
