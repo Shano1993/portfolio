@@ -1,0 +1,17 @@
+{
+    "name": "stefa/portfolio",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Shano1993",
+            "email": "stefan.hanotiau@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/error-handler": "^5.4"
+    }
+}
