@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
@@ -13,13 +13,13 @@
         </div>
         <div id="menu">
             <a href="/index.php?c=home" id="home">Accueil</a>
-            <a href="/index.php?c=skills" id="skills">Compétences</a>
-            <a href="/index.php?c=application" id="application">Applications</a>
-            <a href="/index.php?c=contact" id="contact">Contact</a>
+            <a href="/index.php?c=home&a=skills" id="skills">Compétences</a>
+            <a href="/index.php?c=home&a=application" id="application">Applications</a>
+            <a href="/index.php?c=home&a=contact" id="contact">Contact</a>
         </div>
         <div id="log">
-            <a href="" id="login"><i class="fa fa-unlock-alt"></i> Connexion</a>
-            <a href="" id="register"><i class="fa fa-book"></i> Inscription</a>
+            <a href="/index.php?c=user&a=login" id="login"><i class="fa fa-unlock-alt"></i> Connexion</a>
+            <a href="/index.php?c=user&a=register" id="register"><i class="fa fa-book"></i> Inscription</a>
         </div>
     </header>
 
