@@ -18,8 +18,8 @@
             <a href="/index.php?c=home&a=contact" id="contact">Contact</a>
         </div>
         <div id="log">
-            <a href="/index.php?c=user&a=login" id="login"><i class="fa fa-unlock-alt"></i> Connexion</a>
-            <a href="/index.php?c=user&a=register" id="register"><i class="fa fa-book"></i> Inscription</a>
+            <a href="https://github.com/Shano1993" id="login" target="_blank"><i class="fa fa-github-square"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/stefan-hanotiau-456a03255/" id="register" target="_blank"><i class="fa fa-linkedin-square"></i> Linked<span id="in">in</span></a>
         </div>
     </header>
 

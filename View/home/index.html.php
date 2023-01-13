@@ -9,5 +9,9 @@
 </head>
 <body>
 
+    <div id="targetDiv">
+        <span id="target"></span><span class="cursor"> |</span>
+    </div>
+
 </body>
 </html>
