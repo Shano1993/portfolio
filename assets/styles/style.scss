@@ -184,7 +184,7 @@ header {
 }
 
 #font_logo {
-  margin: 5rem;
+  margin: 7.5rem;
   background-image: url("/assets/images/dev-2.gif");
   background-size: contain;
   width: 700px;
@@ -193,6 +193,15 @@ header {
 
 #info {
   margin: 3.5rem 2.5rem;
+
+  ul {
+    li {
+      color: #F9F9F9;
+      list-style-type: none;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+    }
+  }
 }
 
 

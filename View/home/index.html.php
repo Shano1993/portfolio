@@ -19,7 +19,7 @@
 
     <div id="info">
         <ul>
-            <li>Hello ! Moi c'est Hanotiau Stefan, j'ai 29 ans</li>
+            <li>Hello ! Moi c'est Hanotiau Stefan, j'ai 29 ans.</li>
             <li>En formation concepteur développeur d'application.</li>
             <li>Je suis actuellement diplômé d'un bac +2 en DWWM (Développeur Web et Web Mobile.</li>
             <li>J'aime tout ce qui touche de près ou de loin l'univers de l'informatique.</li>
