@@ -28,6 +28,11 @@ h2 {
   font-size: 2rem;
 }
 
+h3 {
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+
 a {
   text-decoration-line: none;
   font-size: 1.8rem;
@@ -197,6 +202,55 @@ footer {
   margin-top: 5rem;
   padding: 2rem;
   background-color: #29334b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  #left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #logo_footer {
+      background-image: url("/assets/images/logo.png");
+      background-size: contain;
+      width: 15.3rem;
+      height: 5.4rem;
+    }
+  }
+
+  #copy {
+    width: 100%;
+    text-align: center;
+    color: #F9F9F9;
+    padding: 2.5rem;
+  }
+}
+
+.menu_footer {
+  padding: 1rem 2rem;
+
+  li {
+    list-style-type: none;
+    padding: 0.25rem;
+
+    a {
+      color: #F9F9F9;
+      font-size: 1.2rem;
+    }
+  }
 }
 
 // Animation for cursor effect
