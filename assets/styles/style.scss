@@ -135,6 +135,7 @@ header {
     background-color: aliceblue;
     border-radius: 0.5rem;
     padding: 1.5rem;
+    border: 0.3rem solid blue;
 
     form {
       display: flex;
@@ -182,8 +183,22 @@ header {
   }
 }
 
+#font_logo {
+  margin: 5rem;
+  background-image: url("/assets/images/dev-2.gif");
+  background-size: contain;
+  width: 700px;
+  height: 450px;
+}
+
+#info {
+  margin: 3.5rem 2.5rem;
+}
+
+
 #targetDiv {
-  margin: 3.5rem 17rem;
+  width: 90%;
+  margin: 3.5rem 2.5rem;
 
   #target {
     font-size: 2rem;
@@ -199,7 +214,7 @@ header {
 }
 
 footer {
-  margin-top: 5rem;
+  margin-top: 10rem;
   padding: 2rem;
   background-color: #29334b;
   display: flex;
@@ -285,9 +300,25 @@ footer {
     justify-content: center;
     margin: 1rem;
   }
+
+  #formContact {
+    width: 80%;
+    #form {
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: 805px) {
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
   header {
     padding: 0.5rem;
   }
@@ -298,9 +329,32 @@ footer {
     justify-content: center;
     margin: 1rem;
   }
+
+  #formContact {
+    width: 80%;
+    margin: 2rem auto;
+
+    #form {
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    #right {
+      display: none;
+    }
+  }
+
   header {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -308,6 +362,20 @@ footer {
 
   #menu {
     flex-direction: column;
+  }
+
+  #formContact {
+    width: 98%;
+
+    #form {
+      form {
+        .field {
+          width: 90%;
+          margin: 0.5rem;
+          padding: 0.5rem;
+        }
+      }
+    }
   }
 }
 

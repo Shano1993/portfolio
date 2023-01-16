@@ -25,7 +25,7 @@ function typeWriter() {
     if (i < text.length) {
         target.innerHTML += text.charAt(i);
         i++;
-        setTimeout(typeWriter, 70);
+        setTimeout(typeWriter, 40);
     }
 }
 
