@@ -8,7 +8,7 @@ const contact = document.getElementById('contact');
 // active page
 function activePage(page, element) {
     if (window.location.search === page) {
-        element.style.color = "black";
+        element.style.color = "#f80e0e";
     }
 }
 

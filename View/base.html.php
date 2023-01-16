@@ -25,6 +25,10 @@
 
     <div id="content"><?= $html ?></div>
 
+    <footer>
+
+    </footer>
+
     <script src="/build/js/front-bundle.js"></script>
 </body>
 </html>

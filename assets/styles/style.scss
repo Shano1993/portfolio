@@ -1,4 +1,3 @@
-@use "./modules/vars";
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 
 * {
@@ -19,7 +18,14 @@ html {
 
 h1 {
   color: #F9F9F9;
-  margin: 3.5rem 17rem;
+  margin: 3.5rem 5rem;
+  font-size: 3rem;
+}
+
+h2 {
+  color: #F9F9F9;
+  margin: 3.5rem 5rem;
+  font-size: 2rem;
 }
 
 a {
@@ -52,11 +58,11 @@ header {
     a {
       padding: 0.5rem 1.5rem;
       margin: 0 1rem;
-      color: vars.$font-blue;
+      color: #004aad;
     }
 
     a:hover {
-      color: vars.$font-blue;
+      color: #004aad;
     }
   }
 
@@ -78,7 +84,7 @@ header {
       position: relative;
       box-sizing: border-box;
       text-decoration: none;
-      color: vars.$font-blue;
+      color: #004aad;
     }
 
     #login::before, #login::after, #register::before, #register::after {
@@ -86,7 +92,7 @@ header {
       display: block;
       content: "";
       width: 0;
-      border-top: 0.2rem solid vars.$font-blue;
+      border-top: 0.2rem solid #004aad;
       transition-duration: 0.5s;
     }
 
@@ -112,18 +118,15 @@ header {
 
 #home:hover, #skills:hover, #application:hover, #contact:hover {
   color: transparent;
-  text-shadow: 0.2rem 0.2rem 1rem vars.$font-blue;
+  text-shadow: 0.2rem 0.2rem 1rem #004aad;
   animation: flicker 0.5s ease-in-out infinite alternate;
 }
 
 #formContact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  margin: 3.5rem 8.5rem;
 
   #form {
-    width: 35%;
+    width: 65%;
     background-color: aliceblue;
     border-radius: 0.5rem;
     padding: 1.5rem;
@@ -172,10 +175,6 @@ header {
       }
     }
   }
-
-  #map {
-    border: 0.1rem solid black;
-  }
 }
 
 #targetDiv {
@@ -192,6 +191,12 @@ header {
     animation: blink 1s infinite;
     color: #F9F9F9;
   }
+}
+
+footer {
+  margin-top: 5rem;
+  padding: 2rem;
+  background-color: #29334b;
 }
 
 // Animation for cursor effect
@@ -211,18 +216,11 @@ header {
 @keyframes flicker {
   0% {
     opacity: 0.5;
-    text-shadow: 0.2rem 0.2rem 1rem vars.$font-blue;
+    text-shadow: 0.2rem 0.2rem 1rem #004aad;
   }
   100% {
     opacity: 1;
-    text-shadow: 0.2rem 0.2rem 1rem vars.$font-blue;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  #formContact {
-    flex-direction: column;
-    justify-content: center;
+    text-shadow: 0.2rem 0.2rem 1rem #004aad;
   }
 }
 
