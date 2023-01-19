@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
+<?php
+    if (isset($_SESSION['admin'])) { ?>
+            <div id="connect">
+                <p>Connecté en tant que <?= $_SESSION['admin']->getEmail() ?> </p>
+                <a href="/index.php?c=admin&a=logout" id="logout">Déconnexion</a>
+            </div> <?php
+    } ?>
     <header>
         <div id="logo">
 
@@ -14,7 +21,7 @@
         <div id="menu">
             <a href="/index.php?c=home" id="home">Accueil</a>
             <a href="/index.php?c=home&a=skills" id="skills">Compétences</a>
-            <a href="/index.php?c=home&a=application" id="application">Applications</a>
+            <a href="/index.php?c=app&a=application" id="application">Applications</a>
             <a href="/index.php?c=home&a=contact" id="contact">Contact</a>
         </div>
         <div id="log">

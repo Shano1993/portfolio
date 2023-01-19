@@ -11,5 +11,9 @@
             "email": "stefan.hanotiau@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+      "ext-pdo": "*",
+      "ext-openssl": "*",
+      "ext-fileinfo": "*"
+    }
 }

@@ -4,12 +4,13 @@ namespace App;
 
 use App\Controller\AbstractController;
 use App\Controller\ErrorController;
+use ReflectionException;
 use ReflectionMethod;
 
 class Router
 {
     /**
-     * @throws \ReflectionException
+     * @throws ReflectionException
      */
     public static function Route()
     {
