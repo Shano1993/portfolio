@@ -2,6 +2,16 @@ import "../styles/style.scss";
 import "../styles/application.scss";
 import "../styles/login.scss";
 
+const success = document.querySelector('.success')
+
+function getMessage(message) {
+    setTimeout(function () {
+        message.remove();
+    }, 5000)
+}
+
+getMessage(success);
+
 const skill = document.getElementById('skills');
 const home = document.getElementById('home');
 const application = document.getElementById('application');
@@ -14,12 +24,12 @@ function activePage(page, element) {
     }
 }
 
-activePage("?c=skills&a=skills", skill);
+activePage("?c=skills", skill);
 activePage("?c=home", home);
-activePage("?c=app&a=application", application);
+activePage("?c=app", application);
 activePage("?c=home&a=contact", contact);
 
-let text = "Bievenue sur mon portfolio, n'hésitez pas à m'envoyer un message !";
+let text = "Bienvenue sur mon portfolio, n'hésitez pas à m'envoyer un message !";
 let target = document.getElementById("target");
 let i = 0;
 
@@ -41,6 +51,8 @@ function blinkCursor() {
 }
 
 blinkCursor();
+
+
 
 
 

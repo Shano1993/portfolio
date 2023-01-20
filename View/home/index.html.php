@@ -1,10 +1,15 @@
 <?php
-
     if (isset($_SESSION['success'])) {
-        $success = $_SESSION['success']; ?>
-        <div class="success">
-            <p><?= $success ?></p>
-        </div> <?php
+        $success = $_SESSION['success'];
+        unset($_SESSION['success']); ?>
+        <div class="success"> <?= $success ?></div> <?php
+    }
+    if (isset($_SESSION['errors']) && count($_SESSION['errors']) > 0) {
+        $errors = $_SESSION['errors'];
+        unset($_SESSION['errors']);
+        foreach ($errors as $error) { ?>
+            <div class="error"><?= $error ?></div> <?php
+        }
     } ?>
 
 <!doctype html>
