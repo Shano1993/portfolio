@@ -1,4 +1,6 @@
 import "../styles/style.scss";
+import "../styles/application.scss";
+import "../styles/login.scss";
 
 const skill = document.getElementById('skills');
 const home = document.getElementById('home');
@@ -12,9 +14,9 @@ function activePage(page, element) {
     }
 }
 
-activePage("?c=home&a=skills", skill);
+activePage("?c=skills&a=skills", skill);
 activePage("?c=home", home);
-activePage("?c=home&a=application", application);
+activePage("?c=app&a=application", application);
 activePage("?c=home&a=contact", contact);
 
 let text = "Bievenue sur mon portfolio, n'hésitez pas à m'envoyer un message !";

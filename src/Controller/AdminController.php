@@ -17,7 +17,7 @@ class AdminController extends AbstractController
     public function login()
     {
         if (self::adminConnected()) {
-            header('location : /index.php?c=home');
+            header('location : /?c=home');
             exit();
         }
         if ($this->isFormSubmitted()) {
@@ -26,13 +26,13 @@ class AdminController extends AbstractController
 
             $admin = AdminManager::getAdminByMail($email);
             if (null === $admin) {
-                header('location: /index.php?c=home');
+                header('location: /?c=home');
             }
             else {
                 if ($password === $admin->getPassword()) {
                     $admin->setPassword('');
                     $_SESSION['admin'] = $admin;
-                    header('location: /index.php?c=home');
+                    header('location: /?c=home');
                 }
             }
         }
@@ -42,9 +42,9 @@ class AdminController extends AbstractController
     public function logout()
     {
         if (!self::adminConnected()) {
-            header('location: /index.php?c=home');
+            header('location: /?c=home');
         }
         session_destroy();
-        header('location: /index.php?c=home');
+        header('location: /?c=home');
     }
 }

@@ -11,5 +11,13 @@
 
     <h1>Mes compétences</h1>
 
+    <form action="/?c=skills&a=add-skills" method="post">
+        <div>
+            <label for="name"></label>
+            <input type="text" name="name" id="name">
+        </div>
+        <input type="submit" name="save" value="Ajouter la compétence">
+    </form>
+
 </body>
 </html>

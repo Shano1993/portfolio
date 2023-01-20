@@ -9,11 +9,6 @@ class HomeController extends AbstractController
         self::render('home/index');
     }
 
-    public function skills()
-    {
-        self::render('home/skills');
-    }
-
     public function contact()
     {
         self::render('home/contact');

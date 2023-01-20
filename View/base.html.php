@@ -11,7 +11,7 @@
     if (isset($_SESSION['admin'])) { ?>
             <div id="connect">
                 <p>Connecté en tant que <?= $_SESSION['admin']->getEmail() ?> </p>
-                <a href="/index.php?c=admin&a=logout" id="logout">Déconnexion</a>
+                <a href="/?c=admin&a=logout" id="logout">Déconnexion</a>
             </div> <?php
     } ?>
     <header>
@@ -19,10 +19,10 @@
 
         </div>
         <div id="menu">
-            <a href="/index.php?c=home" id="home">Accueil</a>
-            <a href="/index.php?c=home&a=skills" id="skills">Compétences</a>
-            <a href="/index.php?c=app&a=application" id="application">Applications</a>
-            <a href="/index.php?c=home&a=contact" id="contact">Contact</a>
+            <a href="/?c=home" id="home">Accueil</a>
+            <a href="/?c=skills" id="skills">Compétences</a>
+            <a href="/?c=app" id="application">Applications</a>
+            <a href="/?c=home&a=contact" id="contact">Contact</a>
         </div>
         <div id="log">
             <a href="https://github.com/Shano1993" id="login" target="_blank"><i class="fa fa-github-square"></i> GitHub</a>
@@ -36,10 +36,10 @@
         <div id="left">
             <h3>Menu</h3>
             <ul class="menu_footer">
-                <li><a href="/index.php?c=home&a=home">Accueil</a></li>
-                <li><a href="/index.php?c=home&a=skills">Compétences</a></li>
-                <li><a href="/index.php?c=home&a=application">Applications</a></li>
-                <li><a href="/index.php?c=home&a=contact">Contact</a></li>
+                <li><a href="/?c=home&a=home">Accueil</a></li>
+                <li><a href="/?c=home&a=skills">Compétences</a></li>
+                <li><a href="/?c=home&a=application">Applications</a></li>
+                <li><a href="/?c=home&a=contact">Contact</a></li>
             </ul>
         </div>
         <div id="middle">

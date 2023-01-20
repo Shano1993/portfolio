@@ -51,4 +51,17 @@ class AppController extends AbstractController
             }
         }
     }
+
+    public function deleteApp(int $id)
+    {
+        if (!AdminController::adminConnected()) {
+            header('location: /?c=home');
+            exit();
+        }
+        if (AppManager::appExist($id)) {
+            $app = AppManager::getApp($id);
+            $delete = AppManager::deleteApp($app);
+        }
+        header('location: /?c=home');
+    }
 }

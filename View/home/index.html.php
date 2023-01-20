@@ -1,3 +1,12 @@
+<?php
+
+    if (isset($_SESSION['success'])) {
+        $success = $_SESSION['success']; ?>
+        <div class="success">
+            <p><?= $success ?></p>
+        </div> <?php
+    } ?>
+
 <!doctype html>
 <html lang="fr">
 <head>

@@ -70,7 +70,6 @@ a {
 
 
 header {
-
   background-color: aliceblue;
   padding: 1.5rem;
   display: flex;
@@ -209,75 +208,6 @@ header {
   }
 }
 
-#adminApp {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 1.5rem;
-
-  .fieldApp, #submitApp {
-    display: flex;
-    flex-direction: column;
-    margin: 0.5rem;
-
-    input {
-      padding: 0.4rem;
-      border-radius: 0.5rem;
-    }
-
-    input[type=file] {
-      color: red;
-      background-color: #F9F9F9;
-      border: none;
-      font-size: 1.3rem;
-      padding: 0.5rem;
-      cursor: pointer;
-      border-radius: 0.5rem;
-    }
-
-    label {
-      font-size: 1.5rem;
-      color: #F9F9F9;
-    }
-  }
-
-  #submitApp {
-    color: red;
-    background-color: #F9F9F9;
-    border: none;
-    font-size: 1.3rem;
-    padding: 0.5rem;
-    cursor: pointer;
-    border-radius: 0.5rem;
-  }
-}
-
-#adminLogin {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 1.5rem;
-
-  .fieldAdmin, #submitLogin {
-    margin: 0.5rem;
-    border: none;
-
-    input {
-      padding: 0.4rem;
-      border-radius: 0.5rem;
-    }
-  }
-
-  #submitLogin {
-    color: red;
-    background-color: #F9F9F9;
-    font-size: 1.3rem;
-    padding: 0.5rem;
-    cursor: pointer;
-    border-radius: 0.5rem;
-  }
-}
-
 #font_logo {
   margin: 7.5rem;
   background-image: url("/assets/images/dev-2.gif");
@@ -372,36 +302,12 @@ footer {
   }
 }
 
-#allApp {
-  padding: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
-  .linkDisplay {
-    border: 0.3rem solid #000000;
-    background-color: #004aad;
-    border-radius: 0.5rem;
-    padding: 2rem;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    img {
-      width: 30rem;
-      height: 20rem;
-    }
-
-    a {
-      color: red;
-    }
-
-    .linkImage {
-      color: #F9F9F9;
-      padding: 1.5rem;
-    }
-  }
+.success {
+  background-color: #32bb32;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #F9F9F9;
 }
 
 // Animation for cursor effect

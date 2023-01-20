@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <form action="/index.php?c=admin&a=login" method="post" id="adminLogin">
+    <form action="/?c=admin&a=login" method="post" id="adminLogin">
         <div class="fieldAdmin">
             <label for="email"></label>
             <input type="email" id="email" name="email" placeholder="Email">

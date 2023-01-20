@@ -18,7 +18,7 @@ use App\Controller\AbstractController;
     <h1>Mes applications</h1>
 
     <?php if (AbstractController::adminConnected()) { ?>
-        <form action="/index.php?c=app&a=add-app" method="post" enctype="multipart/form-data" id="adminApp">
+        <form action="/?c=app&a=add-app" method="post" enctype="multipart/form-data" id="adminApp">
             <div class="fieldApp">
                 <label for="title">Titre de l'application</label>
                 <input type="text" name="title" id="title">
@@ -41,7 +41,7 @@ use App\Controller\AbstractController;
                     <img src="/img/<?= $app->getImageName() ?>" alt="">
                     <a href="<?= $app->getLink() ?>" class="linkImage"><?= $app->getTitle() ?></a> <?php
                         if (AbstractController::adminConnected()) { ?>
-                            <a href="/index.php?c=links&a=delete-links&id=<?= $app->getId() ?>"><i class="fa fa-remove"></i></a> <?php
+                            <a href="/?c=app&a=delete-app&id=<?= $app->getId() ?>"><i class="fa fa-remove"></i></a> <?php
                         } ?>
                 </div> <?php
             } ?>
